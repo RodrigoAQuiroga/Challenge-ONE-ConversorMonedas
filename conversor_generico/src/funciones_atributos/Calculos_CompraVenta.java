@@ -66,7 +66,7 @@ public class Calculos_CompraVenta extends Atributos_Calculo {
 	public BigDecimal ventaEuro(char [] moneda) {
 
 		BigDecimal monedaExt = new BigDecimal(moneda);
-		BigDecimal venta = getEuroCompra();
+		BigDecimal venta = getEuroVenta();
 
 		BigDecimal resultado = venta.multiply(monedaExt);
 		
