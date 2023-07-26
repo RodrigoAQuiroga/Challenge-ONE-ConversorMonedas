@@ -32,7 +32,7 @@ public class Cotización_Propia {
 		
 
 		System.out.println(resultado);
-		JOptionPane.showMessageDialog(null, "Venta: " + ventaPropia + " de la Moneda Cotizada, puedes venderlos a $ " + resultado
+		JOptionPane.showMessageDialog(null, "Venta: " + valorPropio + " de la Moneda Cotizada, puedes venderlos a $ " + resultado
 				+ " pesos (Cotización para la Venta: " + ventaPropia + ")");
 		return resultado;
 

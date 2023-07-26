@@ -18,24 +18,24 @@ public class Calculos_CompraVenta extends Atributos_Calculo {
 	
 	
 
-	public BigDecimal ventaDolar(char [] pesos) {
+	public BigDecimal ventaDolar(char [] moneda) {
 
 		// BigDecimal resultado = pesos * getDolarCompra();
 
-		BigDecimal pesosArg = new BigDecimal(pesos);
+		BigDecimal monedaExt = new BigDecimal(moneda);
 		BigDecimal venta = getDolarVenta();
 		
-		System.out.println(pesosArg);
+		System.out.println(monedaExt);
 		System.out.println(venta);
 		
 		
 
-		BigDecimal resultado = venta.multiply(pesosArg);
+		BigDecimal resultado = venta.multiply(monedaExt);
 		
 		
 
 		System.out.println(resultado);
-		JOptionPane.showMessageDialog(null, "Venta: " + venta + "  Dolares, puedes venderlos a $ " + resultado
+		JOptionPane.showMessageDialog(null, "Venta: " + monedaExt + "  Dolares, puedes venderlos a $ " + resultado
 				+ " pesos (Cotización para la Venta: " + getDolarVenta() + ")");
 		return resultado;
 
@@ -55,7 +55,7 @@ public class Calculos_CompraVenta extends Atributos_Calculo {
 		BigDecimal resultado = pesosArg.divide(compra, 3,RoundingMode.FLOOR);		
 		
 		System.out.println(resultado);
-		JOptionPane.showMessageDialog(null, "Compra: Con" + pesosArg + " pesos, puedes comprar $ " + resultado
+		JOptionPane.showMessageDialog(null, "Compra: Con " + pesosArg + " pesos, puedes comprar $ " + resultado
 				+ " Dolares (Cotización para la Compra: " + getDolarCompra() + ")");
 
 		return resultado;
@@ -63,15 +63,15 @@ public class Calculos_CompraVenta extends Atributos_Calculo {
 
 	// Euros
 
-	public BigDecimal ventaEuro(char [] pesos) {
+	public BigDecimal ventaEuro(char [] moneda) {
 
-		BigDecimal pesosArg = new BigDecimal(pesos);
+		BigDecimal monedaExt = new BigDecimal(moneda);
 		BigDecimal venta = getEuroCompra();
 
-		BigDecimal resultado = venta.multiply(pesosArg);
+		BigDecimal resultado = venta.multiply(monedaExt);
 		
 		System.out.println(resultado);
-		JOptionPane.showMessageDialog(null, "Venta: " + venta + " Euros, puedes venderlos a $" + resultado
+		JOptionPane.showMessageDialog(null, "Venta: " + monedaExt + " Euros, puedes venderlos a $" + resultado
 				+ " pesos  (Cotización para la Venta: " + getEuroVenta() + ")");
 
 		return resultado;
@@ -93,15 +93,15 @@ public class Calculos_CompraVenta extends Atributos_Calculo {
 
 	// Libras
 
-	public BigDecimal ventaLibra(char [] pesos) {
+	public BigDecimal ventaLibra(char [] moneda) {
 
-		BigDecimal pesosArg = new BigDecimal(pesos);
+		BigDecimal monedaExt = new BigDecimal(moneda);
 		BigDecimal venta = getLibraVenta();
 
-		BigDecimal resultado = venta.multiply(pesosArg);
+		BigDecimal resultado = venta.multiply(monedaExt);
 		
 		System.out.println(resultado);
-		JOptionPane.showMessageDialog(null, "Venta: Con " + venta + " Libras, puedes venderlas a " + resultado
+		JOptionPane.showMessageDialog(null, "Venta: Con " + monedaExt + " Libras, puedes venderlas a " + resultado
 				+ " pesos (Cotización para la Venta: " + getLibraVenta() + ")");
 
 		return resultado;
@@ -122,15 +122,15 @@ public class Calculos_CompraVenta extends Atributos_Calculo {
 
 	// Won
 
-	public BigDecimal ventaWon(char [] pesos) {
+	public BigDecimal ventaWon(char [] moneda) {
 
-		BigDecimal pesosArg = new BigDecimal(pesos);
+		BigDecimal monedaExt = new BigDecimal(moneda);
 		BigDecimal venta = getWonVenta();
 
-		BigDecimal resultado = venta.multiply(pesosArg);
+		BigDecimal resultado = venta.multiply(monedaExt);
 		
 		System.out.println(resultado);
-		JOptionPane.showMessageDialog(null, "Venta: Con " + venta + " Won Coreanos, puedes venderlos a" + resultado
+		JOptionPane.showMessageDialog(null, "Venta: Con " + monedaExt + " Won Coreanos, puedes venderlos a" + resultado
 				+ " pesos (Cotización para la Venta: " + getWonCompra() + ")");
 
 		return resultado;
@@ -152,15 +152,15 @@ public class Calculos_CompraVenta extends Atributos_Calculo {
 
 	// Yen
 
-	public BigDecimal ventaYen(char [] pesos) {
+	public BigDecimal ventaYen(char [] moneda) {
 
-		BigDecimal pesosArg = new BigDecimal(pesos);
+		BigDecimal monedaExt = new BigDecimal(moneda);
 		BigDecimal venta = getYenVenta();
 
-		BigDecimal resultado = venta.multiply(pesosArg);
+		BigDecimal resultado = venta.multiply(monedaExt);
 		
 		System.out.println(resultado);
-		JOptionPane.showMessageDialog(null, "Venta: " + venta + " Yenes, puedes venderlos a" + resultado
+		JOptionPane.showMessageDialog(null, "Venta: " + monedaExt + " Yenes, puedes venderlos a" + resultado
 				+ " pesos (Cotización para la Venta: " + getYenVenta() + ")");
 
 		return resultado;
